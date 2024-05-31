@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+
+.body { background-image: ;}
+
+
+.title-bar {  color: rgb(90, 13, 13); margin-bottom: 2.5%; }
+
+
+
+.title-bar {
+  animation: grow 1s ease-in-out !important; margin-left: -7%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes grow {
   from {
-    transform: rotate(0deg);
+    transform: scale(0);
   }
   to {
-    transform: rotate(360deg);
+    transform: scale(1);
   }
 }
+
+
+.NameInput {  display: block; margin-bottom: 2%; animation: grow 1s ease-in-out;}
+
+
+
+.BtnAdd { display: block; margin-top: 2%; margin-left: 3.5% !important; animation: grow 1s ease-in-out;}
+
+
+/* styles.css */
+
+.BtnAdd {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px; margin-top: 2%; display: block; margin-left: 47%; animation: grow 1s ease-in-out;
+}
+
+.BtnAdd:hover {
+  background-color: #3e8e41; /* Darker green */ animation: grow 1s ease-in-out; 
+} 
+
+
+
+.App {justify-content: center; margin-left: 45%;animation: grow 1s ease-in-out; }
+
